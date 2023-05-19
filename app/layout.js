@@ -1,4 +1,4 @@
-import './globals.module.scss';
+import './globals.scss';
 import { Inter } from 'next/font/google';
 
 export const metadata = {
@@ -12,7 +12,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1>{children}</h1>
+        <section>
+          <nav>
+            <a href="/">(Logo)Main Page</a>
+            <a href="/headphones">Headphones</a>
+            <a href="/Earpods">Earpods</a>
+            <a href="/checkoutpage">Basket</a>
+          </nav>
+          {children}
+        </section>
+
         <span>About</span>
         <br />
         <span>Contacts</span>

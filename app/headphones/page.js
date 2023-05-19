@@ -1,12 +1,15 @@
-export default function Headphones() {
+export default function HeadphonesPage() {
   return (
     <main>
-      This is a Headphones page -<a href="/">(Logo)Main PageMain Page</a>-
-      <a href="/airpods">Airpods</a>-<a href="/checkoutpage">Basket</a>
+      <span>This is a page about Headphones</span>
       <br />
       PIC 1 price
       <br />
+      <button>Buy now</button>
+      <br />
       PIC 2 price
+      <br />
+      <button>Buy now</button>
     </main>
   );
 }

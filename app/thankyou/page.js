@@ -1,4 +1,4 @@
-export default function Airpods() {
+export default function tahnkyouPage() {
   return (
     <main>
       This is a thank you page-<a href="/">(Logo)Main Page</a>-

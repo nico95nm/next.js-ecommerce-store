@@ -1,58 +1,62 @@
-export default function Headphones() {
+export default function Checkoutpage() {
   return (
     <main>
-      This is a Basket page -<a href="/">(Logo)Main PageMain Page</a>-
-      <a href="/headphones">Headphones</a>- <a href="/airpods">Airpods</a>
-      <a href="/thankyoupage">Thank you</a>
+      <nav>
+        This is a Basket page
+        <a href="/thankyoupage">Thank you</a>
+      </nav>
+      <br />
       <span>
         Fisrt name:
         <input data-test-id="checkout-first-name" />
+        <br />
       </span>
       <span>
         Last name:
         <input data-test-id="checkout-last-name" />
-      </span>{' '}
-      <span>
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
-      </span>{' '}
-      <span>
-        Fisrt name:
-        <input data-test-id="checkout-first-name" />
+        <br />
       </span>
-      checkout-first-name-data-test-id="checkout-last-name"
-      -data-test-id="checkout-email" -data-test-id="checkout-address"
-      -data-test-id="checkout-city" -data-test-id="checkout-postal-code"
-      -data-test-id="checkout-country" -data-test-id="checkout-credit-card"
-      -data-test-id="checkout-expiration-date"
-      -data-test-id="checkout-security-code"
+      <span>
+        Email:
+        <input data-test-id="checkout-email" />
+        <br />
+      </span>
+      <span>
+        Address:
+        <input data-test-id="checkout-adress" />
+        <br />
+      </span>
+      <span>
+        City:
+        <input data-test-id="checkout-city" />
+        <br />
+      </span>
+      <span>
+        Postal code:
+        <input data-test-id="checkout-postal-code" />
+        <br />
+      </span>
+      <span>
+        Country:
+        <input data-test-id="checkout-country" />
+        <br />
+      </span>
+      <span>
+        Credit card:
+        <input data-test-id="checkout-credit-card" />
+        <br />
+      </span>
+      <span>
+        Expiration date:
+        <input data-test-id="checkout-expiration-date" />
+        <br />
+      </span>
+      <span>
+        Security code:
+        <input data-test-id="checkout-security-code" />
+      </span>
+      <br />
+      <button data-test-id="checkout-confirm-order"> Confirm order</button>
     </main>
   );
 }
