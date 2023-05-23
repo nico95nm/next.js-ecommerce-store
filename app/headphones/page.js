@@ -3,13 +3,17 @@ export default function HeadphonesPage() {
     <main>
       <span>This is a page about Headphones</span>
       <br />
-      PIC 1 price
+      <img src="./marshall.png" alt="headphones" />
+      199$
       <br />
-      <button>Buy now</button>
+      <button>Add to basket</button>
       <br />
-      PIC 2 price
-      <br />
-      <button>Buy now</button>
+      <div className="botHeadphone">
+        <img src="/hyperx.webp" alt="hyperx" />
+        quantity 299$
+        <br />
+        <button>Add to basket</button>
+      </div>
     </main>
   );
 }

@@ -1,8 +1,6 @@
-export default function tahnkyouPage() {
+export default function thankyouPage() {
   return (
     <main>
-      This is a thank you page-<a href="/">(Logo)Main Page</a>-
-      <a href="/headphones">Headphones</a>
       <p>
         Thank you for purchasing this item.
         <br />

@@ -1,10 +1,6 @@
-export default function Checkoutpage() {
+export default function CheckoutPage() {
   return (
     <main>
-      <nav>
-        This is a Basket page
-        <a href="/thankyoupage">Thank you</a>
-      </nav>
       <br />
       <span>
         Fisrt name:
