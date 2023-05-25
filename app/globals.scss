@@ -2,24 +2,66 @@
   margin: 0;
   background-color: #abb8c3;
 }
+
 .menu {
   background-color: #abb8c3;
   padding: 24px;
   gap: 150px;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   overflow: hidden;
   top: 0;
   width: 100%;
 }
-.product-short-description {
-  margin: 0;
-  float: left;
+.product-container {
+  display: flex;
+  justify-items: center;
 }
-.productRaycon {
+.product-short-description {
+  margin: 0 0 20.8px;
+  text-align: left;
+}
+.product-info-summary {
+  padding: 10px 15px 30px;
+  margin: auto;
+}
+.earbudsImg {
+  display: flex;
+  justify-content: center;
+}
+
+.bdi {
   display: flex;
   justify-content: space-evenly;
+}
+.product-title {
+  margin: 0 0 13.6px;
+}
+.quantityButtons {
+  padding: 2px;
+  float: right;
+}
+.cart-button {
+  gap: 20px;
+  display: flex;
+  justify-content: end;
+}
+.minus-button {
+  padding: 0px 7.76px;
+}
+
+.price-product-page-price {
+  padding: 2px;
+}
+.productRaycon {
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0px;
+  margin: 120px;
+}
+@media screen and (min-width: 800px) {
 }
 
 /* .earpodsButton {

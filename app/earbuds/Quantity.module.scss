@@ -1,0 +1,22 @@
+.counterButton {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .plusButton {
+    padding: 0px 7.76px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #666;
+  }
+  .minusButton {
+    border: none;
+    background-color: #f9f9f9;
+    color: #666;
+    padding: 0px 7.76px;
+  }
+  .quantity {
+    background-color: transparent;
+  }
+}

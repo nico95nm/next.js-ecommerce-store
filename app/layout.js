@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import CookieBanner from './CookieBanner';
 import styles from './globals.scss';
 
 export const metadata = {
@@ -32,6 +33,9 @@ export default function RootLayout({ children }) {
         </header>
 
         <section>{children}</section>
+        <footer>
+          <CookieBanner />
+        </footer>
       </body>
     </html>
   );
