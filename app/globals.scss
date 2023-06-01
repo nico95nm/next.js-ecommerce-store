@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 * {
   margin: 0;
-  background-color: #abb8c3;
+  background-color: #49767f;
 }
-
 .menu {
-  background-color: #abb8c3;
+  background-color: #49767f;
   padding: 24px;
   gap: 150px;
   display: flex;
@@ -37,6 +38,8 @@
 }
 .product-title {
   margin: 0 0 13.6px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .quantityButtons {
   padding: 2px;
@@ -51,18 +54,18 @@
   padding: 0px 7.76px;
 }
 
-.price-product-page-price {
-  padding: 2px;
-}
-.productRaycon {
+/* .price-product-page-price {
+  padding: 2px; */
+
+.productName {
   float: right;
   display: flex;
   justify-content: space-evenly;
   padding: 40px 0px;
-  margin: 120px;
+  margin: 80px;
 }
-@media screen and (min-width: 800px) {
-}
+/* @media screen and (min-width: 800px) {
+ */
 
 /* .earpodsButton {
   display: flex;
@@ -277,13 +280,14 @@
 }
 
 .heroText {
+  background-color: aqua;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   all: unset;
   position: absolute;
-  top: 48%;
-  left: 7%;
-  text-align: left;
+  top: 0%;
+  left: 35%;
+  text-align: center;
   display: flex;
   width: 500px;
 }

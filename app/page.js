@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main>
@@ -12,7 +14,18 @@ export default function Home() {
           cutting-edge features. Upgrade your audio journey today and embrace
           the symphony of superior sound.
         </div>
-        <img src="background.webp" alt="backgound" width="100%" height="80%" />
+        {/*         <Image
+          src={`/images/${background}.webp`}
+          alt={product.name}
+          width={100}
+          height={100}
+        /> */}
+        <img
+          src="/image/background.webp"
+          alt="backgound"
+          width="100%"
+          height="80%"
+        />
       </div>
     </main>
   );

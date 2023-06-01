@@ -1,5 +1,12 @@
 .CookieBanner {
   background-color: aqua;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
   bottom: 0;
   position: fixed;
+  width: 100vw;
+  transition: all;
 }

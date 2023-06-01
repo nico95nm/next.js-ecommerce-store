@@ -16,26 +16,31 @@ export default function RootLayout({ children }) {
         <header>
           <nav>
             <div className="menu">
-              <form action="/#">
+              <form action="/">
                 <button className="btn-25">Hi-Fi Harmony</button>
               </form>
-              <form form action="/earbuds">
+              {/*               <form form action="/earbuds">
                 <button className="btn-25">Earbuds</button>
+              </form> */}
+              <form action="/products" method="get">
+                <button className="btn-25">Products</button>
               </form>
-              <form action="/headphones" method="get">
+              {/*               <form action="/headphones" method="get">
                 <button className="btn-25">Headphones</button>
-              </form>
+              </form> */}
               <form action="/basket" method="get">
-                <button className="btn-24">Basket(5)</button>
+                <button className="btn-24">
+                  Basket({Math.floor(Math.random() * 10)})
+                </button>
               </form>
             </div>
           </nav>
         </header>
 
         <section>{children}</section>
-        <footer>
+        {/*         <footer>
           <CookieBanner />
-        </footer>
+        </footer> */}
       </body>
     </html>
   );

@@ -1,0 +1,47 @@
+.counterButton {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .plusButton {
+    padding: 20px 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    text-transform: none;
+    font-weight: normal;
+  }
+  .minusButton {
+    padding: 20px 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    text-transform: none;
+    font-weight: normal;
+  }
+  .quantity {
+    background-color: transparent;
+    max-width: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    border-radius: 0 !important;
+    appearance: textfield;
+    font-size: 1em;
+  }
+}
+.quantityCounter {
+  background-color: aqua;
+}
+.quantityValue {
+  background-color: aqua;
+}
+.button {
+  background-color: aquamarine;
+}
