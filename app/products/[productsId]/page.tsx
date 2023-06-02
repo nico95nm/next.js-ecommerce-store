@@ -1,37 +1,59 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { getAllProductsById } from '../../../database/products';
-
-export const metadata = {
-  title: 'Animals page',
-  description: 'My favorite animals',
-};
+import { notFound } from 'next/navigation';
+import { getProductById } from '../../../database/products';
+import { getCookie } from '../../../util/cookies';
+import { parseJson } from '../../../util/json';
+import Quantity from './Quantity';
 
 export const dynamic = 'force-dynamic';
 
-export default async function ProductsPage() {
-  const products = await getAllProductsById();
+type Props = {
+  params: { productsId: string };
+};
 
+export type CookieCommentItem = {
+  id: number;
+  comment?: string;
+};
+
+export default function ProductPage(props: Props) {
+  const product = getProductById(Number(props.params.productsId));
+
+  if (!product) {
+    notFound();
+  }
   return (
     <main>
-      This are my animals
-      {products.map((product) => {
-        return (
-          <div
-            key={`animal-div-${product.id}`}
-            data-test-id={`animal-type-${product.type}`}
-          >
-            {/*             <Link href={`/products/${product.id}`}>{product.name}</Link>
-            <br /> */}
+      <div className="product-container">
+        <div className="productName">
+          <div className="earbudsImg">
             <Image
-              src={`/image/${product.name}.jpg`}
+              data-test-id="product-image"
+              className="three"
               alt={product.name}
-              width={100}
-              height={100}
+              width={500}
+              height={500}
+              src={`/image/${product.name}.jpg`}
             />
           </div>
-        );
-      })}
+          <div className="product-info-summary">
+            <h1 className="product-title"> {product.name}</h1>
+            <p className="price-product-page-price ">
+              <bdi>
+                {product.price} <span className="price-symbol">$</span>
+              </bdi>
+            </p>
+            <div className="product-short-description">
+              <p>{product.description}</p>
+            </div>
+            <div className="sticky-add-to-cart">
+              <div className="cart-button">
+                <Quantity />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

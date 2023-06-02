@@ -1,27 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { products } from '../../database/products';
-import { getCookie } from '../../util/cookies';
-import { parseJson } from '../../util/json';
 
 export default function ProductsPage() {
-  const productCommentsCookie = getCookie('fruitComments');
-
-  const productComments = !productCommentsCookie
-    ? []
-    : parseJson(productCommentsCookie);
-
-  const productWithComments = products.map((product) => {
-    const matchingProductFromCookie = productComments.find(
-      (productObject) => product.id === productObject.id,
-    );
-
-    return { ...product, comment: matchingProductFromCookie?.comment };
-  });
-
   return (
     <>
-      {productWithComments.map((product) => (
+      {products.map((product) => (
         <div
           key={`product-div-${product.id}`}
           data-test-id={`product-name-${product.name}`}
@@ -31,7 +15,7 @@ export default function ProductsPage() {
           </Link>{' '}
           <Image
             href={`/products/${product.id}`}
-            src={`/imagepnp/${product.name}.jpg`}
+            src={`/image/${product.name}.jpg`}
             alt={product.name}
             width={100}
             height={100}

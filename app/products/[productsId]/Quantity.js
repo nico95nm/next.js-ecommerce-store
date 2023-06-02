@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { createOrUpdateQuantity } from './actions';
 import styles from './Quantity.module.scss';
 
-export default function QuantityCounter(props) {
+export default function Quantity(props) {
   console.log({ props });
   const [quantity, setQuantity] = useState(1);
   const router = useRouter();
