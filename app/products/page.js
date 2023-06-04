@@ -9,6 +9,7 @@ export default function ProductsPage() {
         <div
           key={`product-div-${product.id}`}
           data-test-id={`product-name-${product.name}`}
+          className=""
         >
           <Link href={`/products/${product.id}`}>
             <h1>{product.name}</h1>

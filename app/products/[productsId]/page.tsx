@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { getProductById } from '../../../database/products';
 import { getCookie } from '../../../util/cookies';
 import { parseJson } from '../../../util/json';
+import styles from './page.module.scss';
 import Quantity from './Quantity';
 
 export const dynamic = 'force-dynamic';
@@ -36,9 +37,9 @@ export default function ProductPage(props: Props) {
               src={`/image/${product.name}.jpg`}
             />
           </div>
-          <div className="product-info-summary">
+          <div className="info-summary">
             <h1 className="product-title"> {product.name}</h1>
-            <p className="price-product-page-price ">
+            <p className={styles['price-product-page-price']}>
               <bdi>
                 {product.price} <span className="price-symbol">$</span>
               </bdi>

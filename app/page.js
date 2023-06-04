@@ -14,12 +14,6 @@ export default function Home() {
           cutting-edge features. Upgrade your audio journey today and embrace
           the symphony of superior sound.
         </div>
-        {/*         <Image
-          src={`/images/${background}.webp`}
-          alt={product.name}
-          width={100}
-          height={100}
-        /> */}
         <img
           src="/image/background.webp"
           alt="backgound"
