@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { products } from '../../database/products';
+import { products } from '../../database/productstest';
 
 export default function ProductsPage() {
   return (

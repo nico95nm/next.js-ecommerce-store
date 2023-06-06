@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getProductById } from '../../../database/products';
+import { getProductById } from '../../../database/productstest';
 import { getCookie } from '../../../util/cookies';
 import { parseJson } from '../../../util/json';
 import styles from './page.module.scss';

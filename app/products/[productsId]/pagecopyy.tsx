@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getProductById, products } from '../../../database/products';
+import { getProductById, products } from '../../../database/productstest';
 import styles from './page.module.scss';
 import QuantityCounter from './Quantity';
 
