@@ -11,9 +11,9 @@ export async function up(sql: Sql) {
   await sql`
   CREATE TABLE products(
     id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    name vachar(30) NOT NULL,
-    type vachar(30) NOT NULL,
-    description vachar(30),
+    name varchar(30) NOT NULL,
+    type varchar(30) NOT NULL,
+    description varchar(3000),
     price integer
     )
   `;

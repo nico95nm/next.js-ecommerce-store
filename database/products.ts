@@ -4,7 +4,7 @@ import { sql } from './connect';
 
 export const getProducts = cache(async () => {
   const products = await sql<Product[]>`
-    SELECT * FROM Products
+    SELECT * FROM migrations
  `;
   return products;
 });
@@ -14,7 +14,7 @@ export const getProductsById = cache(async (id: number) => {
     SELECT
       *
     FROM
-    products
+    migrations
     WHERE
       id = ${id}
   `;
@@ -22,15 +22,9 @@ export const getProductsById = cache(async (id: number) => {
 });
 
 export const createProduct = cache(
-  async (
-    id: number,
-    name: string,
-    type: string,
-    price: number,
-    description: string,
-  ) => {
+  async (name: string, type: string, price: number, description: string) => {
     const [product] = await sql<Product[]>`
-      INSERT INTO products
+      INSERT INTO migrations
         (name, type, price, description)
       VALUES
         (${name}, ${type}, ${price}, ${description})

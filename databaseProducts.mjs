@@ -7,7 +7,7 @@ const sql = postgres();
 
 console.log(
   await sql`
-    SELECT * FROM animals;
+    SELECT * FROM product;
   `,
 );
 

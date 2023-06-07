@@ -3,7 +3,7 @@ id integer PRIMARY KEY GENERATOR ALWAYS AS IDENTITY,
 name vachar(30) NOT NULL,
 type vachar(30) NOT NULL,
 price vachar(30) NOT NULL,
-description vachar(30) NOT NULL,
+description vachar(40) NOT NULL,
 );
 INSERT INTO products
 (name, type, price, description)
