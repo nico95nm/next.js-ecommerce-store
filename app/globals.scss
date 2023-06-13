@@ -9,16 +9,13 @@
   padding: 24px;
   gap: 150px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 
   overflow: hidden;
   top: 0;
   width: 100%;
 }
-.product-container {
-  display: flex;
-  justify-items: center;
-}
+
 .product-short-description {
   margin: 0 0 20.8px;
   text-align: left;
@@ -31,7 +28,6 @@
   display: flex;
   justify-content: center;
 }
-
 .bdi {
   display: flex;
   justify-content: space-evenly;

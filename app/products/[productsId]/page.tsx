@@ -41,7 +41,7 @@ export default function ProductPage(props: Props) {
             <h1 className="product-title"> {product.name}</h1>
             <p className={styles['price-product-page-price']}>
               <bdi>
-                {product.price} <span className="price-symbol">$</span>
+                {product.price} <span className="price-symbol">€</span>
               </bdi>
             </p>
             <div className="product-short-description">

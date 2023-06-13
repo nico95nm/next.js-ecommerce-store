@@ -5,19 +5,8 @@ import { createOrUpdateQuantity } from './actions';
 import styles from './Quantity.module.scss';
 
 export default function Quantity(props) {
-  console.log({ props });
   const [quantity, setQuantity] = useState(1);
   const router = useRouter();
-
-  const minusButton = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const plusButton = () => {
-    setQuantity(quantity + 1);
-  };
 
   return (
     <form className={styles.quantity}>

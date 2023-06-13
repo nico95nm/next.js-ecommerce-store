@@ -1,4 +1,4 @@
-'use server';
+/* 'use server';
 
 import { cookies } from 'next/headers';
 import { getCookie } from '../../../util/cookies';
@@ -21,4 +21,26 @@ export async function createOrUpdateComment(
     productToUpdate.quantity = quantity;
   }
   await cookies().set('cart', JSON.stringify(productComments));
+}
+ */
+
+'use server';
+
+import { cookies } from 'next/headers';
+import { getCookie } from '../../../util/cookies';
+import { Quantity } from './Quantity';
+
+export async function createOrUpdateQuantity(
+  productId: number,
+  quantity: number,
+) {
+  const productQuantityCookie = getCookie('cart');
+
+  const productQuantities = Quantity(
+    productQuantityCookie,
+    productId,
+    quantity,
+  );
+
+  await cookies().set('cart', productQuantities);
 }

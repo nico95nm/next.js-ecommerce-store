@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import Badge from './componenets/Badge';
 import CookieBanner from './CookieBanner';
 import styles from './globals.scss';
 
@@ -19,18 +20,14 @@ export default function RootLayout({ children }) {
               <form action="/">
                 <button className="btn-25">Hi-Fi Harmony</button>
               </form>
-              {/*               <form form action="/earbuds">
-                <button className="btn-25">Earbuds</button>
-              </form> */}
+
               <form action="/products" method="get">
                 <button className="btn-25">Products</button>
               </form>
-              {/*               <form action="/headphones" method="get">
-                <button className="btn-25">Headphones</button>
-              </form> */}
+
               <form action="/basket" method="get">
                 <button className="btn-24">
-                  Basket({Math.floor(Math.random() * 10)})
+                  Basket <Badge />
                 </button>
               </form>
             </div>

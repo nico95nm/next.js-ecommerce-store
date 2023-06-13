@@ -1,1 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+.container {
+  display: flex;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.name-div {
+  background-color: yellow;
+}
